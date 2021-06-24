@@ -14,10 +14,10 @@ class ProdutosController extends Controller
 
     public function store(Request $request)
     {
-        Produto:: create([
-            'nome' => $request->nome,
+        Produto::create([
+            'nome'=> $request->nome,
             'custo' => $request->custo,
-            'peco' => $request->preco,
+            'preco' => $request->preco,
             'quantidade' => $request->quantidade,
         ]);
 
